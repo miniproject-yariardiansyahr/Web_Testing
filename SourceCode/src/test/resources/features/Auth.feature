@@ -36,14 +36,14 @@ Feature: AltaShop Web Authentications Function
     Then User should see pop up error
 
   @AltaStoreWeb @AltaAuth @AltaNegativeLogin
-  Scenario: User login with incorrect email
+  Scenario: User login with blank email
     Given User is on login page
     When User input blank email
     And User click login button
     Then User should see pop up blank error
 
   @AltaStoreWeb @AltaAuth @AltaNegativeLogin
-  Scenario: User login with incorrect email
+  Scenario: User login with blank password
     Given User is on login page
     When User input blank password
     And User click login button
